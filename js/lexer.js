@@ -247,12 +247,12 @@ const program_text = "PROGRAM spo; \
 VAR a, b, c: INTEGER; \
 BEGIN \
 IF (a = 0) THEN a:= a * a * a; \
-IF (a < 0) THEN a: = a * a;\
-IF (b < 0) THEN b: = b * b;\
-IF (b > 0) THEN b: = b * b * b;\
-IF (c > 0) THEN c: = c * c * c;\
-IF (c < 0) THEN c: = c * c;\
-END. \
+IF (a < 0) THEN a:= a * a;\
+IF (b < 0) THEN b:= b * b;\
+IF (b > 0) THEN b:= b * b * b;\
+IF (c > 0) THEN c:= c * c * c;\
+IF (c < 0) THEN c:= c * c;\
+END.\
 "
 const lex = new lexer(program_text)
 
